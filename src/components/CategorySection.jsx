@@ -2,12 +2,9 @@ import React from "react";
 
 const CategorySection = () => {
   return (
-    <section class="text-gray-600 body-font bg-[#f8f5f4]">
-        
-            <img src='/images/leaf.png' className='h-12 w-12 mx-auto'/>
-        
-
-      <div class="container px-5 py-24 mx-auto">
+    <section class="text-gray-600 body-font bg-[#f8f5f4] relative">
+        <img src='/images/leaf3.png' className='absolute -top-10 left-1/3 sm:left-1/2  '/>
+      <div class="container px-5 py-14 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="p-4 md:w-1/2 w-full">
             <div class="h-full bg-white p-8 rounded">

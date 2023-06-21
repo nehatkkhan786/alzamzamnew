@@ -3,11 +3,11 @@ import React from "react";
 const Testimonials = () => {
   return (
     
-      <section class=" text-center bg-[#f8f5f4] py-14 px-10 ">
-        <h2 class="mb-12 text-3xl sm:text-4xl font-bold">
+      <section class=" text-center bg-[#f8f5f4] py-8 px-10 ">
+        <h2 class="mb-12 text-2xl sm:text-3xl font-bold uppercase">
           Customer Reviews
         </h2>
-
+        <img src='/images/leaf2.png' className="mx-auto mb-10"/>
         <div class="grid gap-x-6 md:grid-cols-2 lg:gap-x-12 items-center">
           <div class="mb-12 md:mb-0">
             <div class="mb-6 flex justify-center">

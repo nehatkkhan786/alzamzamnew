@@ -15,13 +15,13 @@ const HeroCarousal = () => {
   return (
     <Swiper
     spaceBetween={30}
-    effect={"fade"}
+    effect={"creative"}
     navigation={true}
     pagination={{
       clickable: true,
     }}
     autoplay={{
-      delay: 1000,
+      delay: 2000,
       disableOnInteraction: false,
     }}
     modules={[EffectFade, Navigation, Pagination, Autoplay]}
@@ -29,8 +29,11 @@ const HeroCarousal = () => {
     className="mySwiper"
   >
     <SwiperSlide>
-      <img src="/images/onions.jpeg" />
+      <img src="/images/onions.jpeg"  />
     </SwiperSlide>
+    <SwiperSlide>
+    <img src="/images/mix-vegies.jpg" />
+  </SwiperSlide>
     <SwiperSlide>
       <img src="https://images.pexels.com/photos/164504/pexels-photo-164504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
     </SwiperSlide>

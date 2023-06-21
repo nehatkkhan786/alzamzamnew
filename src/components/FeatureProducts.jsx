@@ -4,11 +4,11 @@ import { ProductList } from "./data/ProductList";
 const FeatureProducts = () => {
   return (
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <h1 class="sm:text-5xl text-3xl font-bold title-font text-center text-gray-900 mb-20">
+      <div class="container px-5 py-16 mx-auto">
+        <h1 class="sm:text-5xl text-3xl font-bold title-font text-center text-gray-900 mb-6 uppercase">
           Featured Products
-          {/* <br class="hidden sm:block"/>Selfies Wayfarers */}
         </h1>
+        <img src='/images/leaf2.png' className="mx-auto mb-6"/>
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full items-center  ">
           {ProductList.map((product) => {
             return (
