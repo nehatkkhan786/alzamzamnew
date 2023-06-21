@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100vw;
+  height: calc(90vh - 4rem);
+  object-fit: fill;
+}
+
+
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+  /* CSS rules here */
+  .swiper-slide img {
+    height: 250px;
+  }
+}
+
+.blur-img {
+  filter: blur(2px) brightness(0.7); /* Adjust the blur radius as needed */
+}
