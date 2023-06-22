@@ -23,9 +23,6 @@ const Homepage = () => {
     <BestSelling/>
     <Testimonials/>
     <Registration/>
-    <ContactFooter/>
-    <Footer/>
-    
     </>
   )
 }

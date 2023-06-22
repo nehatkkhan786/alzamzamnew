@@ -6,6 +6,7 @@
 body{
 font-family: 'Cairo', sans-serif;
 font-family: 'Epilogue', sans-serif;
+/* color: #8c560c !important; */
 }
 .custom-p{
   letter-spacing: -0.05em !important;
@@ -16,12 +17,16 @@ font-family: 'Epilogue', sans-serif;
   height: 100%;
 }
 
-.swiper-slide {
+/* .swiper-slide {
+  background-position: center;
+  background-size: auto;
+} */
+.cstm {
   background-position: center;
   background-size: auto;
 }
 
-.swiper-slide img {
+.cstm img {
   display: block;
   width: 100vw;
   height: calc(95vh - 4rem);
@@ -38,7 +43,7 @@ font-family: 'Epilogue', sans-serif;
 /* Styles for mobile screens */
 @media (max-width: 767px) {
   /* CSS rules here */
-  .swiper-slide img {
+  .cstm img {
     height: 250px;
   }
 }
@@ -47,3 +52,4 @@ font-family: 'Epilogue', sans-serif;
 .blur-img {
   filter: blur(2px) brightness(0.7); /* Adjust the blur radius as needed */
 }
+

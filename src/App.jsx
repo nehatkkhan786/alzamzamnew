@@ -1,5 +1,7 @@
 import React from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import ContactFooter from './components/ContactFooter'
+import Footer from './components/Footer'
 import Header from './components/Navbar'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
@@ -15,6 +17,8 @@ const App = () => {
         <Route path='/shop' exact element={<Shop/>}/>
         <Route path='/contact' exact element={<ContactUs/>}/>
       </Routes>
+      <ContactFooter/>
+      <Footer/>
    </BrowserRouter>
   )
 }
