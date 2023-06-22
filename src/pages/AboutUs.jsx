@@ -5,10 +5,10 @@ import AboutSats from "../components/about_us/AboutSats";
 const AboutUs = () => {
   return (
     <>
-      <section class="text-gray-600 body-font  bg-[#f8f5f4]">
+      <section class="text-gray-600 body-font mt-4 bg-[#f8f5f4]">
         <div class="container px-5 py-24 mx-auto relative">
           <h1 className="text-center text-4xl font-bold uppercase">
-            About Us{" "}
+            About Us
           </h1>
           <img
             src="/images/leaf3.png"

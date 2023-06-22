@@ -19,7 +19,7 @@ const ContactFooter = () => {
             </div>  
         <br/>
       </div>
-      <img src='/images/alzamzamlogo.jpg' className='h-62 md:h-44 w-auto mx-auto'/>
+      <img src='/images/zam_trans2.png' className='h-62 md:h-44 w-auto mx-auto'/>
     </div>
   </section>
   )

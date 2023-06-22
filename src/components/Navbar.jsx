@@ -26,15 +26,15 @@ function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <Link to='/'>
                     <img
-                      className="block h-40 w-auto lg:hidden"
-                      src="/images/alzamzamlogo.jpg"
+                      className="block h-44 w-auto lg:hidden"
+                      src="/images/zam_trans2.png"
                       alt="Your Company"
                     />
                   </Link>
                   <Link to='/'>
                   <img
                     className="hidden h-44 w-auto lg:block"
-                    src="/images/alzamzamlogo.jpg"
+                    src="/images/zam_trans2.png"
                     alt="Your Company"
                   />
                   </Link>

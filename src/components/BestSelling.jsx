@@ -1,7 +1,9 @@
 import React from 'react'
 import { ProductList } from './data/ProductList'
+import {useNavigate} from 'react-router-dom'
 
 const BestSelling = () => {
+  const navigate = useNavigate()
   return (
     <section class="text-gray-600 body-font">
     <div class="container px-5 py-10 mx-auto">
@@ -19,6 +21,7 @@ const BestSelling = () => {
                   alt="ecommerce"
                   class="object-cover object-center w-full h-full "
                   src={product.image}
+                  onClick={()=>navigate('/shop')}
                 />
               </a>
               <div class="mt-4 text-center">
