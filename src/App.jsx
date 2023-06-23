@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Header from './components/Navbar'
 import Whatsapp from './components/whatsapp'
 import AboutUs from './pages/AboutUs'
+import Cart from './pages/Cart'
 import ContactUs from './pages/ContactUs'
 import Homepage from './pages/Homepage'
 import Product from './pages/Product'
@@ -19,6 +20,8 @@ const App = () => {
         <Route path='/shop'  element={<Shop/>}/>
         <Route path='/shop/product/:id' element={<Product/>} />
         <Route path='/contact'  element={<ContactUs/>}/>
+        <Route path='/cart'  element={<Cart/>}/>
+
       </Routes>
 
       <ContactFooter/>

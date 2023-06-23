@@ -7,7 +7,7 @@ const AboutUs = () => {
     <>
       <section class="text-gray-600 body-font mt-4 bg-[#f8f5f4]">
         <div class="container px-5 py-24 mx-auto relative">
-          <h1 className="text-center text-4xl font-bold uppercase">
+          <h1 className="text-center text-zamzam_bg text-4xl font-bold uppercase">
             About Us
           </h1>
           <img

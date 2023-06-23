@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 body{
 font-family: 'Cairo', sans-serif;
 font-family: 'Epilogue', sans-serif;
@@ -33,10 +37,10 @@ font-family: 'Epilogue', sans-serif;
   object-fit: fill;
 }
 .swiper-button-prev {
-  color: lightgreen;
+  color: #8e5908;
 }
 .swiper-button-next {
-  color: lightgreen;
+  color: #8e5908;
 }
 
 

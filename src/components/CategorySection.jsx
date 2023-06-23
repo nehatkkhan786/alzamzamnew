@@ -1,6 +1,8 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom'
 
 const CategorySection = () => {
+  const navigate = useNavigate()
   return (
     <section class="text-gray-600 body-font bg-[#f8f5f4] relative">
         <img src='/images/leaf3.png' className='absolute -top-10 left-1/3 sm:left-1/2  '/>
@@ -11,7 +13,7 @@ const CategorySection = () => {
               <h1 class="text-2xl font-medium title-font text-gray-900 mb-12 ">
                 Green & Fresh Vegetables
               </h1>
-              <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+              <button onClick={()=>navigate('/shop')} class="inline-flex text-white bg-zamzam_bg border-0 py-2 px-6 focus:outline-none hover:bg-zamzam_bg_hover rounded text-lg">
               Shop NOW
             </button> 
             <div className='flex justify-end'>
@@ -25,7 +27,7 @@ const CategorySection = () => {
                 <h1 class="text-2xl font-medium title-font text-gray-900 mb-12 ">
                 Spices
                 </h1>
-                <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                <button  onClick={()=>navigate('/shop')} class="inline-flex text-white bg-zamzam_bg border-0 py-2 px-6 focus:outline-none hover:bg-zamzam_bg_hover rounded text-lg">
                 Shop NOW
                 </button>
                 <div className='flex justify-end'>

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import {Link, useLocation} from 'react-router-dom'
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -15,28 +15,29 @@ function classNames(...classes) {
 }
 
 function Navbar() {
-  const location = useLocation()
+  const location = useLocation();
+  const navigate = useNavigate();
   return (
     <Disclosure as="nav" className="transparent">
-      {({ open,close }) => (
+      {({ open, close }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-[100px] items-center justify-between">
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link to='/'>
+                  <Link to="/">
                     <img
                       className="block h-44 w-auto lg:hidden"
                       src="/images/zam_trans2.png"
                       alt="Your Company"
                     />
                   </Link>
-                  <Link to='/'>
-                  <img
-                    className="hidden h-44 w-auto lg:block"
-                    src="/images/zam_trans2.png"
-                    alt="Your Company"
-                  />
+                  <Link to="/">
+                    <img
+                      className="hidden h-44 w-auto lg:block"
+                      src="/images/zam_trans2.png"
+                      alt="Your Company"
+                    />
                   </Link>
                 </div>
               </div>
@@ -71,11 +72,19 @@ function Navbar() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-
                       </Link>
                     ))}
                   </div>
                 </div>
+
+                <button
+                  onClick={() => navigate("/cart")}
+                  type="button"
+                  className="rounded-full bg-zamzam_bg p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 hidden md:flex ml-4"
+                >
+                  <span className="sr-only">View notifications</span>
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
               </div>
             </div>
           </div>
@@ -88,17 +97,27 @@ function Navbar() {
                   as="nav"
                   href={item.href}
                   className={classNames(
-                    item.href === location.pathname ? "bg-[#8c560c] text-white" : "text-[8c560c]",
+                    item.href === location.pathname
+                      ? "bg-[#8c560c] text-white"
+                      : "text-[8c560c]",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
-                  
                 >
-                  <Link to={item.href} onClick={()=>close()}>
-                      {item.name}
+                  <Link to={item.href} onClick={() => close()}>
+                    {item.name}
                   </Link>
                 </Disclosure>
               ))}
+              <Link
+              onClick={() => close()}
+                to="/cart"
+                className={classNames(
+                  "block rounded-md px-3 py-2 text-base font-medium"
+                )}
+              >
+                Cart
+              </Link>
             </div>
           </Disclosure.Panel>
         </>

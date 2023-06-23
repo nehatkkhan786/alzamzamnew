@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useNavigate} from 'react-router-dom'
 const About = () => {
+  const navigate = useNavigate()
   return (
     <section class="text-gray-600 body-font">
       <div class="container mx-auto flex px-5 py-10 md:flex-row flex-col-reverse items-center">
@@ -31,7 +32,7 @@ const About = () => {
             more sustainable world.
           </p>
           <div class="flex justify-center mb-8">
-            <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+            <button onClick={()=>navigate('/about')}  class="inline-flex text-white bg-zamzam_bg border-0 py-2 px-6 focus:outline-none hover:bg-zamzam_bg_hover rounded text-lg">
               More About Us
             </button>
             

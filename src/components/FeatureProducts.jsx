@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { ProductList } from "./data/ProductList";
 import {useNavigate} from 'react-router-dom'
+import mainContext from "../ContextandProvider/MainContext";
 
 const FeatureProducts = () => {
   const navigate= useNavigate()
+  const {addToCart} = useContext(mainContext)
+
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-16 mx-auto">
@@ -14,7 +17,7 @@ const FeatureProducts = () => {
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full items-center  ">
           {ProductList.map((product) => {
             return (
-              <div class="w-full ">
+              <div class="w-full " key={product.id}>
                 <a class="block relative h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -30,8 +33,8 @@ const FeatureProducts = () => {
                   <h2 class="text-gray-900 title-font text-lg font-medium">
                     {product.name}
                   </h2>
-                  <button class="mt-2 inline-flex text-white bg-green-500 border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded-xl text-lg uppercase">
-                    Get Quote
+                  <button onClick={()=>addToCart(product)} class="mt-2 inline-flex text-white bg-zamzam_bg border-0 py-2 px-4 focus:outline-none hover:bg-zamzam_bg_hover rounded-md text-lg uppercase">
+                     Add To Quote
                   </button>
                 </div>
               </div>
