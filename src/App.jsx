@@ -6,8 +6,10 @@ import Header from './components/Navbar'
 import Whatsapp from './components/whatsapp'
 import AboutUs from './pages/AboutUs'
 import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 import ContactUs from './pages/ContactUs'
 import Homepage from './pages/Homepage'
+import OrderSuccess from './pages/OrderSuccess'
 import Product from './pages/Product'
 import Shop from './pages/Shop'
 const App = () => {
@@ -21,6 +23,8 @@ const App = () => {
         <Route path='/shop/product/:id' element={<Product/>} />
         <Route path='/contact'  element={<ContactUs/>}/>
         <Route path='/cart'  element={<Cart/>}/>
+        <Route path='/checkout'  element={<Checkout/>}/>
+        <Route path='/order_success'  element={<OrderSuccess/>}/>
 
       </Routes>
 

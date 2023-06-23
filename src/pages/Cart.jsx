@@ -27,7 +27,7 @@ const Cart = () => {
             No Items in the cart
           </h1>
           <button
-            onclick={() => navigate("/shop")}
+            onClick={() => navigate('/shop')}
             class="inline-flex text-white bg-secondary border-0 py-2 px-6 focus:outline-none items-center hover:bg-zamzam_bg_hover rounded text-lg"
           >
             Shop NOW
@@ -103,7 +103,7 @@ const Cart = () => {
                   <p class="mb-1 text-lg font-bold">{cart?.length}</p>
                 </div>
               </div>
-              <button class="mt-6 w-full rounded-md bg-zamzam_bg py-1.5 font-medium text-blue-50 hover:bg-zamzam_bg_hover">
+              <button onClick={()=>navigate('/checkout')} class="mt-6 w-full rounded-md bg-zamzam_bg py-1.5 font-medium text-blue-50 hover:bg-zamzam_bg_hover">
                 Check out
               </button>
             </div>

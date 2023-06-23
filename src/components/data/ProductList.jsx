@@ -28,6 +28,43 @@ export const ProductList = [
     image: "/images/spices.jpg",
     description: "We deals in very vast variety of spices in both powder as well ao in solid such as turmeric powder, Red Chilli Green Chilli, Coriender powder etc.",
   },
+  {
+    id: 5,
+    name: "Nashik Onions",
+    category: "Vegitables",
+    image: "/images/best_onion.jpg",
+    description: "We deals in very vast variety of spices in both powder as well ao in solid such as turmeric powder, Red Chilli Green Chilli, Coriender powder etc.",
+  },
+
+  {
+    id: 6,
+    name: "Lemon",
+    category: "Vegitables",
+    image: "/images/best_lemon.jpg",
+    description: "We deals in very vast variety of spices in both powder as well ao in solid such as turmeric powder, Red Chilli Green Chilli, Coriender powder etc.",
+  },
+
+  {
+    id: 7,
+    name: "G4 Chilli",
+    category: "Vegitables",
+    image: "/images/g4_chilli.jpg",
+    description: "We deals in very vast variety of Chilli",
+  },
+  {
+    id: 8,
+    name: "Turkey Apple",
+    category: "Fruits",
+    image: "/images/turkey_apple.jpg",
+    description: "We deals in best quality of Turkey Apples and other varieties too like Kashmiri ",
+  },
+  {
+    id: 9,
+    name: "Vegitable",
+    category: "Vegitables",
+    image: "/images/veg_cat.jpg",
+    description: "We deals in Mixed Vegetables and we have good quality of Nashik Onion (55 mm plus) size and other sizes are also available.",
+  },
 ];
 export const ProductVarities = [
   { id: 1, name: "Fresh Fruits" },

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ProductList } from "./data/ProductList";
 import {useNavigate} from 'react-router-dom'
 import mainContext from "../ContextandProvider/MainContext";
@@ -6,6 +6,9 @@ import mainContext from "../ContextandProvider/MainContext";
 const FeatureProducts = () => {
   const navigate= useNavigate()
   const {addToCart} = useContext(mainContext)
+  
+  const featProduct = ProductList.slice(0,4)
+
 
   return (
     <section class="text-gray-600 body-font">
@@ -15,7 +18,7 @@ const FeatureProducts = () => {
         </h1>
         <img src='/images/leaf2.png' className="mx-auto mb-6"/>
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full items-center  ">
-          {ProductList.map((product) => {
+          {featProduct.map((product) => {
             return (
               <div class="w-full " key={product.id}>
                 <a class="block relative h-48 rounded overflow-hidden">

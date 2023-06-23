@@ -63,6 +63,12 @@ const MainReducer = (state, action) => {
         };
       }
 
+      case "CLEAR_CART":
+        return {
+          ...state,
+          cart : null
+        }
+
     default:
       return state;
   }

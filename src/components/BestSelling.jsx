@@ -6,6 +6,7 @@ import mainContext from '../ContextandProvider/MainContext'
 const BestSelling = () => {
   const {addToCart} = useContext(mainContext)
   const navigate = useNavigate()
+  const bestSellingProduct = ProductList.slice(0, 8)
   return (
     <section class="text-gray-600 body-font">
     <div class="container px-5 py-10 mx-auto">
@@ -15,9 +16,9 @@ const BestSelling = () => {
       </h1>
       <img src='/images/leaf2.png' className="mx-auto mb-8"/>
       <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full items-center  ">
-        {ProductList.map((product) => {
+        {bestSellingProduct.map((product) => {
           return (
-            <div class="w-full ">
+            <div class="w-full " key={product.id}>
               <a class="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="ecommerce"
