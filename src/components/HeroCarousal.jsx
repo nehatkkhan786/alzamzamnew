@@ -29,26 +29,26 @@ const HeroCarousal = () => {
     className="mySwiper"
   >
     <SwiperSlide className='cstm'>
-      <img src="/images/onions.jpeg"  />
+      <img src="/images/slider/olive.PNG"  />
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-    <img src="/images/mix-vegies.jpg" />
+    <img src="/images/slider/onion.PNG" />
   </SwiperSlide>
     <SwiperSlide className='cstm'>
-      <img src="https://images.pexels.com/photos/164504/pexels-photo-164504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+      <img src="/images/slider/rice1.PNG" />
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-      <img src="https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  />
+      <img src="/images/slider/rice2.PNG"  />
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-      <img src="https://images.pexels.com/photos/4109912/pexels-photo-4109912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+      <img src="/images/slider/spices.PNG"/>
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-      <img src="https://wallpaperaccess.com/full/1463528.jpg"/>
+      <img src="/images/slider/vegies.PNG"/>
     </SwiperSlide>
   </Swiper>
   )
