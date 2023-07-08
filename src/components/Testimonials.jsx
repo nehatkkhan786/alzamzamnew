@@ -103,7 +103,7 @@ const Testimonials = () => {
                 class="w-32  shadow-lg dark:shadow-black/20"
               />
             </div>
-            <h5 class="mb-2 text-lg font-bold">AL Arab Food Stuf Trading L.L.C</h5>
+            <h5 class="mb-2 text-lg font-bold">AL Arab Foodstuff Trading L.L.C</h5>
             
             <p class="mb-4">
             "Highly Recommended! Unbeatable Quality Fresh Vegetables at Affordable Prices, with Timely Delivery!"
