@@ -29,26 +29,26 @@ const HeroCarousal = () => {
     className="mySwiper"
   >
     <SwiperSlide className='cstm'>
-      <img src="/images/slider/olive.PNG"  />
+      <img src="/images/slider/1.PNG"  />
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-    <img src="/images/slider/onion.PNG" />
+    <img src="/images/slider/2.PNG" />
   </SwiperSlide>
     <SwiperSlide className='cstm'>
-      <img src="/images/slider/rice1.PNG" />
+      <img src="/images/slider/3.PNG" />
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-      <img src="/images/slider/rice2.PNG"  />
+      <img src="/images/slider/4.PNG"  />
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-      <img src="/images/slider/spices.PNG"/>
+      <img src="/images/slider/5.PNG"/>
     </SwiperSlide>
 
     <SwiperSlide className='cstm'>
-      <img src="/images/slider/vegies.PNG"/>
+      <img src="/images/slider/6.PNG"/>
     </SwiperSlide>
   </Swiper>
   )
